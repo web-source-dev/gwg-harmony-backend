@@ -1,0 +1,27 @@
+{
+  "name": "gwg-pilot-backend",
+  "version": "1.0.0",
+  "description": "Backend for Grow with Google Creative Youth Pilot by Harmony 4 All",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "cohort:sync": "node scripts/run-cohort-sync.js",
+    "cohort:sync:csv": "node scripts/run-cohort-sync.js --csv",
+    "coursera:auth": "node scripts/coursera-oauth-setup.js",
+    "coursera:test": "node scripts/test-coursera-api.js"
+  },
+  "dependencies": {
+    "@getbrevo/brevo": "^3.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "googleapis": "^144.0.0",
+    "mongoose": "^8.2.0",
+    "node-cron": "^3.0.3",
+    "twilio": "^5.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
